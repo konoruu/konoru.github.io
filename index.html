@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Pelajaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jadwal Pelajaran</h1>
+        <label for="filter-hari">Filter berdasarkan hari:</label>
+        <select id="filter-hari">
+            <option value="all">Semua Hari</option>
+            <option value="Senin">Senin</option>
+            <option value="Selasa">Selasa</option>
+            <option value="rabu">rabu</option>
+            <option value="kamis">kamis</option>
+            <option value="jumat">jumat</option>
+           
+        </select>
+        <table class="jadwal-table">
+            <thead>
+                <tr>
+                    <th>Hari</th>
+                    <th>Jam</th>
+                    <th>Mata Pelajaran</th>
+                    
+            </thead>
+            <tbody>
+                <tr data-hari="Senin">
+                    <td>Senin</td>
+                    <td>08.30-09.10</td>
+                    <td>B.arab</td>
+                    
+                    
+                </tr>
+                <tr data-hari="Senin">
+                    <td>Senin</td>
+                    <td>09.10-09.50</td>
+                    <td>B.arab</td>
+                    
+                    
+                </tr>
+                <tr data-hari="Senin">
+                    <td>Senin</td>
+                    <td>09.50-10.10</td>
+                    <td>Istirahat</td>
+                    
+                    
+                </tr>
+                <tr data-hari="Senin">
+                    <td>Senin</td>
+                    <td>10.10-10.50</td>
+                    <td>Matematika</td>
+                    
+                    
+                </tr>
+                <tr data-hari="Senin">
+                    <td>Senin</td>
+                    <td>10.50-11.30</td>
+                    <td>Matematika</td>
+                    
+                    
+                </tr>
+                <tr data-hari="Senin">
+                    <td>Senin</td>
+                    <td>11.30-12.10</td>
+                    <td>Ekonomi</td>
+                    
+                   
+                </tr>
+                <tr data-hari="Senin">
+                    <td>Senin</td>
+                    <td>12.10-12.50</td>
+                    <td>Ekonomi</td>
+                   
+                    
+                </tr>
+                <tr data-hari="Senin">
+                    <td>Senin</td>
+                    <td>12:50-13:40</td>
+                    <td>Ishoma</td>
+                    
+                    
+                </tr>
+                <tr data-hari="Senin">
+                    <td>Senin</td>
+                    <td>13.40-14.20</td>
+                    <td>Sejarah umum</td>
+                    
+                    
+                </tr>
+                <tr data-hari="Senin">
+                    <td>Senin</td>
+                    <td>14.20-15.00</td>
+                    <td>Sejarah umum</td>
+                    
+                </tr>
+                
+                <tr data-hari="selasa">
+                    <td>selasa</td>
+                    <td>08.30-09.10</td>
+                    <td>Geografi</td>
+                    
+                </tr>
+                <tr data-hari="selasa">
+                    <td>selasa</td>
+                    <td>09.10-09.50</td>
+                    <td>Geografi</td>
+                    
+                    
+                </tr>
+                <tr data-hari="selasa">
+                    <td>selasa</td>
+                    <td>09.50-10.10</td>
+                    <td>Istirahat</td>
+                    
+                </tr>
+                <tr data-hari="selasa">
+                    <td>selasa</td>
+                    <td>10.10-10.50</td>
+                    <td>B.indonesia</td>
+                   
+                </tr>
+                <tr data-hari="selasa">
+                    <td>selasa</td>
+                    <td>10.50-11.30</td>
+                    <td>B.indonesia</td>
+                    
+                    
+                </tr>
+                <tr data-hari="selasa">
+                    <td>selasa</td>
+                    <td>11.30-12.10</td>
+                    <td>Fiqih</td>
+                   
+                   
+                </tr>
+                <tr data-hari="selasa">
+                    <td>selasa</td>
+                    <td>12.10-12.50</td>
+                    <td>Fiqih</td>
+                    
+                    
+                </tr>
+                <tr data-hari="selasa">
+                    <td>selasa</td>
+                    <td>12:50-13:40</td>
+                    <td>Ishoma</td>
+                    
+                    
+                </tr>
+                <tr data-hari="selasa">
+                    <td>selasa</td>
+                    <td>13.40-14.20</td>
+                    <td>Sosiologi</td>
+                    
+                    
+                </tr>
+                <tr data-hari="selasa">
+                    <td>selasa</td>
+                    <td>14.20-15.00</td>
+                    <td>Sosiologi</td>
+                </tr>
+                
+                <tr data-hari="rabu">
+                    <td>rabu</td>
+                    <td>08.30-09.10</td>
+                    <td>Sbk</td>
+                    
+                </tr>
+                <tr data-hari="rabu">
+                    <td>rabu</td>
+                    <td>09.10-09.50</td>
+                    <td>Sbk</td>
+                    
+                    
+                </tr>
+                <tr data-hari="rabu">
+                    <td>rabu</td>
+                    <td>09.50-10.10</td>
+                    <td>Istirahat</td>
+                    
+                </tr>
+                <tr data-hari="rabu">
+                    <td>rabu</td>
+                    <td>10.10-10.50</td>
+                    <td>Akidah Akhlak</td>
+                   
+                </tr>
+                <tr data-hari="rabu">
+                    <td>rabu</td>
+                    <td>10.50-11.30</td>
+                    <td>Akidah Akhlak</td>
+                    
+                    
+                </tr>
+                <tr data-hari="rabu">
+                    <td>rabu</td>
+                    <td>11.30-12.10</td>
+                    <td>Alquran hadits</td>
+                   
+                   
+                </tr>
+                <tr data-hari="rabu">
+                    <td>rabu</td>
+                    <td>12.10-12.50</td>
+                    <td>Alquran hadits</td>
+                    
+                    
+                </tr>
+                <tr data-hari="rabu">
+                    <td>rabu</td>
+                    <td>12:50-13:40</td>
+                    <td>Ishoma</td>
+                    
+                    
+                </tr>
+                <tr data-hari="rabu">
+                    <td>rabu</td>
+                    <td>13.40-14.20</td>
+                    <td>B.inggris</td>
+                    
+                    
+                </tr>
+                <tr data-hari="rabu">
+                    <td>rabu</td>
+                    <td>14.20-15.00</td>
+                    <td>B.inggris</td>
+                </tr>
+                
+                <tr data-hari="kamis">
+                    <td>kamis</td>
+                    <td>08.30-09.10</td>
+                    <td>Ekonomi</td>
+                    
+                </tr>
+                <tr data-hari="kamis">
+                    <td>kamis</td>
+                    <td>09.10-09.50</td>
+                    <td>Pkn</td>
+                    
+                    
+                </tr>
+                <tr data-hari="kamis">
+                    <td>kamis</td>
+                    <td>09.50-10.10</td>
+                    <td>Istirahat</td>
+                    
+                </tr>
+                <tr data-hari="kamis">
+                    <td>kamis</td>
+                    <td>10.10-10.50</td>
+                    <td>Ski</td>
+                   
+                </tr>
+                <tr data-hari="kamis">
+                    <td>kamis</td>
+                    <td>10.50-11.30</td>
+                    <td>Ski</td>
+                    
+                    
+                </tr>
+                <tr data-hari="kamis">
+                    <td>kamis</td>
+                    <td>11.30-12.10</td>
+                    <td>Fisika</td>
+                   
+                   
+                </tr>
+                <tr data-hari="kamis">
+                    <td>kamis</td>
+                    <td>12.10-12.50</td>
+                    <td>Fisika</td>
+                    
+                    
+                </tr>
+                <tr data-hari="kamis">
+                    <td>kamis</td>
+                    <td>12:50-13:40</td>
+                    <td>Ishoma</td>
+                    
+                    
+                </tr>
+                <tr data-hari="kamis">
+                    <td>kamis</td>
+                    <td>13.40-14.20</td>
+                    <td>Geografi</td>
+                    
+                    
+                </tr>
+                <tr data-hari="kamis">
+                    <td>kamis</td>
+                    <td>14.20-15.00</td>
+                    <td>Sosiologi</td>
+
+                <tr data-hari="jumat">
+                    <td>jumat</td>
+                    <td>08.30-09.10</td>
+                    <td>Penjas</td>
+                    
+                </tr>
+                <tr data-hari="jumat">
+                    <td>jumat</td>
+                    <td>09.10-09.50</td>
+                    <td>Penjas</td>
+                    
+                    
+                </tr>
+                <tr data-hari="jumat">
+                    <td>jumat</td>
+                    <td>09.50-10.10</td>
+                    <td>Istirahat</td>
+                    
+                </tr>
+                <tr data-hari="jumat">
+                    <td>jumat</td>
+                    <td>10.10-10.50</td>
+                    <td>Sejarah indonesia</td>
+                   
+                </tr>
+                <tr data-hari="jumat">
+                    <td>jumat</td>
+                    <td>10.50-11.30</td>
+                    <td>Sejarah indonesia</td>
+                    
+                    
+                </tr>
+                <tr data-hari="jumat">
+                    <td>jumat</td>
+                    <td>11.30-12.50</td>
+                    <td>Ishoma</td>
+                   
+                   
+                </tr>
+                <tr data-hari="jumat">
+                    <td>jumat</td>
+                    <td>12.50-13.25</td>
+                    <td>Informatika</td>
+                    
+                    
+                </tr>
+                <tr data-hari="jumat">
+                    <td>jumat</td>
+                    <td>13.25-14.00</td>
+                    <td>Informatika</td>
+                    
+                    
+                </tr>
+                <tr data-hari="jumat">
+                    <td>jumat</td>
+                    <td>14.00-14.35</td>
+                    <td>Matematika</td>
+                    
+                    
+                </tr>
+                <tr data-hari="jumat">
+                    <td>jumat</td>
+                    <td>14.35-15.10</td>
+                    <td>Ekonomi</td>
+                </tr>
+                    
+                    
+                </tbody>
+        </table>
+    </div>
+</div>
+<script src="script.js"></script>
+
+
+    <script>
+        const filterHari = document.getElementById('filter-hari');
+        const rows = document.querySelectorAll('.jadwal-table tbody tr');
+
+        filterHari.addEventListener('change', function() {
+            const selectedHari = this.value;
+
+            rows.forEach(row => {
+                const rowHari = row.getAttribute('data-hari');
+                if (selectedHari === 'all' || selectedHari === rowHari) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+ 
